@@ -1,39 +1,33 @@
-import java.util.*;
-import java.util.function.Consumer;
+import java.util.ArrayList;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
 
-/**Имплементируем интерфейс Iterable.*/
-public class Stock implements Iterable {
+/** Класс склада, хранит товары.
+ * Имплементирует интерфейс Iterable.*/
+public final class Stock implements Iterable<Item> {
 
-    /** Класс Stock с полем наименования товара.
-     * @param name .*/
-    public Stock(final String name) {
+    /** Создаем список с товарами.*/
+    private List<Item> itemsToArray = new ArrayList<>();
 
-        this.name = name;
+    /** Создаем связный список с товарами.*/
+    private List<Item> itemsToList = new LinkedList<>();
+
+    /** Метод добавления товара в список.
+     * @param item .*/
+    public void addItemToList(final Item item) {
+        itemsToList.add(item);
     }
 
-    /** Геттер наименования товара.
-     * @return */
-    public String getName() {
-        return name;
+    /** Метод добавления товара в список.
+     * @param item .*/
+    public void addItemToArray(final Item item) {
+        itemsToArray.add(item);
     }
-
-    /** Основной/главный класс программы.*/
-    private String name;
 
     @Override
     /** Перегрузка для итератора.*/
-    public Iterator<Stock> iterator() {
-        return null;
-    }
-
-    @Override
-    /** Основной/главный класс программы.*/
-    public void forEach(final Consumer action) {
-    }
-
-    @Override
-    /** Основной/главный класс программы.*/
-    public Spliterator<Stock> spliterator() {
+    public Iterator<Item> iterator() {
         return null;
     }
 }
