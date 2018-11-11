@@ -25,8 +25,8 @@ public final class Program {
 
         Item p1 = new Item("Apple");
         Item p2 = new Item("Orange");
-        Stock arrayStock = new Stock();
-        Stock listStock = new Stock();
+        ArrayListStock arrayStock = new ArrayListStock();
+        LinkedListStock listStock = new LinkedListStock();
 
         arrayStock.addItemToArray(p1);
         arrayStock.addItemToArray(p2);
@@ -38,7 +38,6 @@ public final class Program {
         for (Item item : arrayStock) {
             System.out.println(item.getName());
         }
-        //Stock listStock = new Stock();
 
         for (Item item : listStock) {
             System.out.println(item.getName());

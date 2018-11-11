@@ -7,7 +7,8 @@ public final class Item {
     private String name;
 
     /**
-     * Класс LinkedListStock с полем наименования товара.
+     * Класс LinkedListStock
+     * с полем наименования товара.
      *
      * @param name .
      */
