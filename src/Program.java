@@ -23,15 +23,15 @@ public final class Program {
 
         new Program();
 
-        Item p1 = new Item("Apple");
-        Item p2 = new Item("Orange");
+        Item i1 = new Item("Item #1");
+        Item i2 = new Item("Item #2");
         ArrayListStock arrayStock = new ArrayListStock();
         LinkedListStock listStock = new LinkedListStock();
 
-        arrayStock.addItemToArray(p1);
-        arrayStock.addItemToArray(p2);
-        listStock.addItemToList(p1);
-        listStock.addItemToList(p2);
+        arrayStock.addItemToArray(i1);
+        arrayStock.addItemToArray(i2);
+        listStock.addItemToList(i1);
+        listStock.addItemToList(i2);
 
         //System.out.printf("ArrayList has %d elements \n", arrayStock.size());
 
